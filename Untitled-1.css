@@ -1,0 +1,88 @@
+/*google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Noto Serif TC', serif;
+}
+
+img {
+    pointer-events: none;
+  }
+
+.circle {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(87, 226, 219);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 100% 0 0 0;
+    transition: 500ms;
+}
+
+    .circle:hover {
+        height: 550px;
+        width: 550px;
+    }
+
+.c-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 18rem;
+    margin-top: 20rem;
+}
+
+.deco-dot {
+    color: rgb(87, 226, 219);
+    font-size: 25rem;
+    font-family: 'Sorts Mill Goudy', serif; 
+    position: relative;
+    margin-top: -18rem;
+    margin-left: -5rem;
+    z-index: -10;
+}
+
+.mt-title {
+    padding-top: 20rem;
+}
+
+.f-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 5rem;
+}
+
+
+/*第二頁*/
+
+.page-2 {
+    background-color: rgb(87, 226, 219);
+}
+
+#fd-in {
+    opacity: 0;
+    transition: 500ms;
+}
+
+.p-mm {
+    margin-top: 8rem;
+}
+
+.next {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: end;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+@media (max-width: 1400px){}
+@media (max-width: 1200px){}
+@media (max-width: 992px){}
+@media (max-width: 768px){}
+@media (max-width: 576px){}
