@@ -95,6 +95,15 @@ img {
     background-color: rgb(255, 166, 0);
 }
 
+.menu {
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    right: 5rem;
+    top: 2rem;
+    font-size: 1.5rem;
+}
+
 .m-title {
     padding: 2rem 0rem;
 }
@@ -116,6 +125,12 @@ img {
 
 .menu-hr {
     transform: scaleX(0.8);
+}
+
+.page-title {
+    position: fixed;
+    left: 5rem;
+    top: 2rem;
 }
 
 @media (max-width: 1400px) {}
