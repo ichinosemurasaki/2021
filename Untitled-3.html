@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="網頁描述" />
+    <meta property="og:url" content="SNS URL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SNS標題" />
+    <meta property="og:description" content="SNS描述" />
+    <meta property="og:image" content="SNS圖片" />
+
+    <link href="./Untitled-1.css" rel="stylesheet" />
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <!-- <script src="./Untitled-1.js"></script> -->
+    <script src="./fadepage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body class="page-3 user-select-none">
+    <script>
+        AOS.init();
+    </script>
+
+<!-- menu -->
+
+    <button class="menu" data-bs-toggle="modal" data-bs-target="#menu">ABCD</button>
+
+    <div class="modal fade" id="menu" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="row">
+                    <h5 class="text-center modal-title m-title" id="menuLabel">MENU</h5>
+                    <button type="button" class="btn-close bc" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <a href="./index.html" class="menu-link">link1</a><br />
+                    <hr class="menu-hr" />
+                    <a href="#" class="menu-link">link2</a><br />
+                    <hr class="menu-hr" />
+                    <a href="#" class="menu-link">link3</a><br />
+                    <hr class="menu-hr" />
+                    <a href="#" class="menu-link">link4</a><br />
+                    <hr class="menu-hr" />
+                    <a href="#" class="menu-link">link5</a><br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- menu end -->
+
+</body>
+
+</html>
