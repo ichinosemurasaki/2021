@@ -7,6 +7,11 @@
     font-family: 'Noto Serif TC', serif;
 }
 
+#mobile-only {
+    display: none;
+    transition: 500ms;
+}
+
 img {
     pointer-events: none;
 }
@@ -133,6 +138,14 @@ img {
     top: 2rem;
 }
 
+#scroll-down {
+    z-index: 99;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    color: rgba(87, 87, 87, 0.5);
+}
+
 @media (max-width: 1400px) {}
 
 @media (max-width: 1200px) {}
@@ -141,4 +154,10 @@ img {
 
 @media (max-width: 768px) {}
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    #mobile-only {
+        display: unset;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
