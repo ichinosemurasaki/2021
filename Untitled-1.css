@@ -17,10 +17,27 @@
     font-family: 'jf', serif;
 }
 
+.screen-notion {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1.3rem;
+}
+
 #mobile-only {
     display: none;
     transition: 500ms;
-    padding: 2rem;
+}
+
+.hamburger {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 100%;
+}
+
+.menu-ico {
+    margin-top: 0.8rem;
 }
 
 img {
@@ -157,7 +174,7 @@ img {
     color: rgba(87, 87, 87, 0.5);
 }
 
-.rmg {
+.rmg1 {
     margin-top: 15rem!important;
 }
 
@@ -176,16 +193,66 @@ img {
 
 @media (max-width: 1400px) {}
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .f-title {
+        font-size: 4rem;
+        margin-left: 3.5rem
+    }
+    .deco-dot {
+        font-size: 20rem;
+        margin-left: -4rem;
+    }
+    .circle {
+        height: 400px;
+        width: 400px;
+    }
+    .c-text {
+        margin-left: 13rem;
+        margin-top: 15rem;
+    }
+}
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .mt-title {
+        padding-top: 15rem;
+    }
+}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .deco-dot {
+        font-size: 20rem;
+        margin-left: 0rem;
+    }
+    .mt-title {
+        padding-top: 8rem;
+    }
+    .circle {
+        height: 300px;
+        width: 300px;
+    }
+    .c-text {
+        font-size: 1.5rem;
+        margin-left: 10rem;
+        margin-top: 12rem;
+    }
+}
 
 @media (max-width: 576px) {
     #mobile-only {
         display: unset;
         text-align: center;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .circle {
+        height: 200px;
+        width: 200px;
+    }
+    .c-text {
+        font-size: 1.3rem;
+        margin-left: 7rem;
+        margin-top: 8rem;
     }
 }
