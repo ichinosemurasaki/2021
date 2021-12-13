@@ -13,17 +13,17 @@
     <meta property="og:description" content="SNS描述" />
     <meta property="og:image" content="SNS圖片" />
 
-    <link href="./Untitled-1.css" rel="stylesheet" />
+    <link href="./css/Untitled-1.css" rel="stylesheet" />
     <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="./bar.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="./css/bar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link href="./css/aos-display.css" rel="stylesheet" />
 
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
-    <script src="./jquery-3.6.0.min.js"></script>
-    <script src="./Untitled-2.js"></script>
-    <script src="./fadepage.js"></script>
-    <script src="./bar.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/Untitled-2.js"></script>
+    <script src="./js/fadepage.js"></script>
+    <script src="./js/bar.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
@@ -37,13 +37,16 @@
         <div id="mobile-only">建議使用1920x1080解析度以獲得最佳瀏覽體驗</div>
     </header>
 
+    <div class="square-container">
+        <div class="circle-wh"></div>
+    </div>
 
     <div class="container p-mm">
         <div class="row">
-            <div class="col-4" data-aos="fade-down" data-aos-delay="100">
+            <div class="col-md-4" data-aos="fade-down" data-aos-delay="100">
                 <img src="./images/2.jpg" class="img-fluid profile-photo" id="fd-in" />
             </div>
-            <div class="col-8" data-aos="fade-down" data-aos-delay="300">
+            <div class="col-md-8" data-aos="fade-down" data-aos-delay="300">
                 <h1>Title</h1>
                 <h2>solgan</h2>
                 <hr />
@@ -58,7 +61,7 @@
                 <div class="w-100"></div>
 
                 <div class="row" data-aos="fade-down" data-aos-delay="500">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-blog.png"></div>
                             <div class="col-9">
@@ -69,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-fb.png"></div>
                             <div class="col-9">
@@ -80,7 +83,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-line.png"></div>
                             <div class="col-9">
@@ -91,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-yahoo.png"></div>
                             <div class="col-9">
@@ -102,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-blog.png"></div>
                             <div class="col-9">
@@ -113,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-line.png"></div>
                             <div class="col-9">
@@ -124,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-fb.png"></div>
                             <div class="col-9">
@@ -135,7 +138,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-blog.png"></div>
                             <div class="col-9">
@@ -146,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="sk01 row m-3">
                             <div class="col-3"><img class="img-fluid" src="./images/icon/icon-yahoo.png"></div>
                             <div class="col-9">
@@ -160,13 +163,9 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 mb-5">
             <div class="next" id="next">
-                <span data-aos="fade-down" data-aos-delay="500">N</span>
-                <span data-aos="fade-down" data-aos-delay="600">E</span>
-                <span data-aos="fade-down" data-aos-delay="700">X</span>
-                <span data-aos="fade-down" data-aos-delay="800">T</span>
-                <span data-aos="fade-down" data-aos-delay="900">▶</span>
+                NEXT▶
             </div>
         </div>
     </div>
