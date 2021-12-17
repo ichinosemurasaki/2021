@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +19,37 @@
     <link href="./css/aos.css" rel="stylesheet" />
     <link href="./css/aos-display.css" rel="stylesheet" />
     <link href="./css/fontawesome.min.css" rel="stylesheet" />
+    <link href="./jquery-ui-1.13.0.custom/jquery-ui.css" rel="stylesheet" />
+    <style>
+        .column {
+          float: left;
+          padding-bottom: 100px;
+        }
+        .portlet {
+          margin: 0 0em 1em 0;
+          padding: 0.3em;
+          border-radius: 0.3rem;
+        }
+        .portlet-header {
+          padding: 0.2em 0.3em;
+          margin-bottom: 0.5em;
+          position: relative;
+        }
+        .portlet-toggle {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -8px;
+        }
+        .portlet-content {
+          padding: 0.4em;
+        }
+        .portlet-placeholder {
+          border: 1px dotted black;
+          margin: 0 1em 1em 0;
+          height: 50px;
+        }
+        </style>
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
@@ -27,7 +57,44 @@
     <script src="./js/fadepage.js"></script>
     <script src="./js/all.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="./jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [75, 300],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+        $(document).tooltip();
+        $(function () {
+            $(".column").sortable({
+                connectWith: ".column",
+                handle: ".portlet-header",
+                cancel: ".portlet-toggle",
+                placeholder: "portlet-placeholder ui-corner-all"
+            });
+            $(".portlet")
+                .addClass("ui-widget ui-widget-content ui-helper-clearfix ui-corner-all")
+                .find(".portlet-header")
+                .addClass("ui-widget-header ui-corner-all")
+                .prepend("<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
+            $(".portlet-toggle").on("click", function () {
+                var icon = $(this);
+                icon.toggleClass("ui-icon-minusthick ui-icon-plusthick");
+                icon.closest(".portlet").find(".portlet-content").toggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -70,7 +137,9 @@
     <!--menu other-->
     <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <button class="menu" data-bs-toggle="modal" data-bs-target="#menu">
-            <div class="hamburger"><i class="fas fa-bars menu-ico"></i></div>
+            <div class="hamburger">
+                <i class="fas fa-bars menu-ico"></i>
+            </div>
         </button>
     </a>
 
@@ -92,7 +161,7 @@
                 <hr class="menu-hr" />
                 <a href="#" class="menu-link">link5</a><br />
             </div>
-        </div>     
+        </div>
     </div>
 
     <div class="container mt-5">
@@ -103,6 +172,7 @@
                         <div class="col">
                             <div class="te-box">
                                 <img class="img-fluid" src="./images/icon/icon-blog.png">
+                                <p title="213">794564</p>
                             </div>
                         </div>
                     </div>
@@ -114,6 +184,7 @@
                         <div class="col">
                             <div class="te-box">
                                 <img class="img-fluid" src="./images/icon/icon-blog.png">
+                                <p title="468">4846541</p>
                             </div>
                         </div>
                     </div>
@@ -126,10 +197,47 @@
     <div class="bg-bis rmg2">
         <div class="container">
             <div class="row" id="2">
-                <div class="col"><img class="img-fluid" src="./images/icon/icon-blog.png"></div>
-                <div class="col">
-                    <p>123</p>
+                <div class="col"><img class="img-fluid" src="./images/icon/icon-blog.png">
+                    <p title="456">7845654</p>
                 </div>
+                <div class="col">
+                    <input type="text" id="datepicker" title="9663">
+                </div>
+                <div class="col column">
+                    <div id="slider-range"></div>
+                </div>
+                <div class="w-100"> </div>
+                <div class="col column">
+                    <div class="portlet">
+                        <div class="portlet-header">Feeds</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+                    <div class="portlet">
+                        <div class="portlet-header">News</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+                </div>
+
+                <div class="col column">
+                    <div class="portlet">
+                        <div class="portlet-header">Shopping</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+                </div>
+
+                <div class="col column">
+                    <div class="portlet">
+                        <div class="portlet-header">Links</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+                    <div class="portlet">
+                        <div class="portlet-header">Images</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+                </div>
+
+                <div class="col column"></div>
+
             </div>
         </div>
     </div>
