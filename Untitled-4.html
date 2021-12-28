@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="description" content="網頁描述" />
+    <meta name="keywords" content="關鍵字" />
     <meta property="og:url" content="SNS URL" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="SNS標題" />
@@ -66,10 +67,9 @@
         });
         $(function () {
             $("#slider-range").slider({
-                range: true,
                 min: 0,
                 max: 500,
-                values: [75, 300],
+                values: [0],
                 slide: function (event, ui) {
                     $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
                 }
