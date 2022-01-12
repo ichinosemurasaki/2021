@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(360deg, #FFF1EB -21.25%, #ACE0F9 115.19%);
+}
+
+.white-block {
+    background-color: white;
+    width: 950px;
+    height: 630px;
+    font-size: large;
+}
+
+.white-block::after {
+    background-image: url(../images/chris-nguyen-lbmrrNgq2lo-unsplash.jpg);
+    content: "";
+    height: 500px;
+    width: 500px;
+    z-index: -1;
+}
