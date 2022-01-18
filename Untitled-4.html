@@ -21,37 +21,7 @@
     <link href="./css/aos-display.css" rel="stylesheet" />
     <link href="./css/fontawesome.min.css" rel="stylesheet" />
     <link href="./jquery-ui-1.13.0.custom/jquery-ui.css" rel="stylesheet" />
-
-    <style>
-        .column {
-          float: left;
-          padding-bottom: 100px;
-        }
-        .portlet {
-          margin: 0 0em 1em 0;
-          padding: 0.3em;
-          border-radius: 0.3rem;
-        }
-        .portlet-header {
-          padding: 0.2em 0.3em;
-          margin-bottom: 0.5em;
-          position: relative;
-        }
-        .portlet-toggle {
-          position: absolute;
-          top: 50%;
-          right: 0;
-          margin-top: -8px;
-        }
-        .portlet-content {
-          padding: 0.4em;
-        }
-        .portlet-placeholder {
-          border: 1px dotted black;
-          margin: 0 1em 1em 0;
-          height: 50px;
-        }
-    </style>
+    <link href="./css/bar.css" rel="stylesheet" />
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
@@ -60,43 +30,8 @@
     <script src="./js/all.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./jquery-ui-1.13.0.custom/jquery-ui.js"></script>
-    
-    <script>
-        $(function () {
-            $("#datepicker").datepicker();
-        });
-        $(function () {
-            $("#slider-range").slider({
-                min: 0,
-                max: 500,
-                values: [0],
-                slide: function (event, ui) {
-                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-                }
-            });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-                " - $" + $("#slider-range").slider("values", 1));
-        });
-        $(document).tooltip();
-        $(function () {
-            $(".column").sortable({
-                connectWith: ".column",
-                handle: ".portlet-header",
-                cancel: ".portlet-toggle",
-                placeholder: "portlet-placeholder ui-corner-all"
-            });
-            $(".portlet")
-                .addClass("ui-widget ui-widget-content ui-helper-clearfix ui-corner-all")
-                .find(".portlet-header")
-                .addClass("ui-widget-header ui-corner-all")
-                .prepend("<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
-            $(".portlet-toggle").on("click", function () {
-                var icon = $(this);
-                icon.toggleClass("ui-icon-minusthick ui-icon-plusthick");
-                icon.closest(".portlet").find(".portlet-content").toggle();
-            });
-        });
-    </script>
+    <script src="./js/flip.js"></script>
+    <script src="./js/bar.js"></script>
 
 </head>
 
@@ -168,36 +103,147 @@
         </div>
     </div>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="te-box">
-                                <img class="img-fluid" src="./images/icon/icon-blog.png">
-                                <p title="213">794564</p>
+    <div class="container mgt-card">
+        <div class="row justify-content-center">
+            <div class="flip-card col-xl-7 col-lg-10 col-11">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front container">
+                        <div class="row mt-5 jcc-md">
+                            <div class="col-md-5 col-sm-8 col-10">
+                                <img src="./images/chris-nguyen-lbmrrNgq2lo-unsplash.jpg" alt="Avatar" class="avatar">
+                                <h5 style="text-align: left;">SDSOK</h5>
+                            </div>
+                            <div class="col-md row">
+                                <p>123</p>
+                                <hr>
+                                <p>456</p>
+                                <hr>
+                                <p>789</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="te-box">
-                                <img class="img-fluid" src="./images/icon/icon-blog.png">
-                                <p title="468">4846541</p>
+                    <div class="flip-card-back container">
+                        <h4 class="mt-5" style="text-align: left;">title</h4>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-blog.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:123</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk1"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-fb.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:456</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-line.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:789</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-yahoo.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:000</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-blog.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:147</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-line.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:258</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-fb.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:369</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk7"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-blog.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:000</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk8"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="sk01 row m-3">
+                                    <div class="col-3"><img class="img-fluid" src="./images/icon/icon-yahoo.png"></div>
+                                    <div class="col-9">
+                                        <label>blooggg:000</label>
+                                        <div class="bar">
+                                            <div class="bar-fill sk9"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <h4 style="text-align: left;">title2</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-4 nt-blc"></div>
+        </div>
     </div>
 
-    <a id="scroll-down" href="#2"><i class="fas fa-chevron-circle-down"></i></a>
+    <!--1.PS 2.AI 3.H5 4.CSS 5.bs 6.JQ 7.Figma 8.Xd -->
+    <!--1.SW 2.CAD 3.CSP 4.rhino 5.AE -->
+
+    <div class="d-flex justify-content-center">
+        <a id="scroll-down" href="#2"><i class="fas fa-chevron-circle-down"></i></a>
+    </div>
 
     <div class="bg-bis rmg2">
         <div class="container">
@@ -250,9 +296,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col column"></div>
-
             </div>
         </div>
     </div>
