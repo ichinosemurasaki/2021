@@ -1,13 +1,16 @@
 $(function () {
     setTimeout(function () {
-        $("#fd-in").css("opacity", "1"), 500
-    })
+        $("#fd-in").css("opacity", "1");
+    }, 500
+    )
     setTimeout(function () {
-        $(".circle-wh").css("transform", "scale(15)"), 500
-    })
+        $(".circle-wh").css("transform", "scale(15)");
+    }, 100
+    )
     setTimeout(function () {
-        $(".next").css("opacity", "1"), 500
-    })
+        $(".next").css("opacity", "1");
+    }, 500
+    )
     $("#next").on("click", () => {
         $(".circle-2").css({
             "height": "10px",

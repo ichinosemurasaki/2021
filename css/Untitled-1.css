@@ -1,11 +1,12 @@
 /*google font*/
 
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap'); 
+
 /* * {
     font-family: 'Playfair Display', serif;
     font-family: 'Noto Serif TC', serif;
-} */
+}  */
 
 @font-face {
     font-family: "jf";
@@ -17,15 +18,8 @@
     font-family: 'jf', serif;
 }
 
-.screen-notion {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 1.3rem;
-}
-
-#mobile-only {
+.screen-notion, #mobile-only {
     display: none;
-    transition: 500ms;
 }
 
 .hamburger {
@@ -122,8 +116,8 @@ img {
     letter-spacing: 3px;
     text-align: end;
     font-size: 1.5rem;
+    transition: 3s;
     opacity: 0;
-    transition: 5s;
 }
 
 .circle-2 {
@@ -164,6 +158,12 @@ img {
     background-color: rgb(255, 255, 255);
 }
 
+.bg-yue {
+    background-color: #f8d7d6;
+    padding-bottom: 5rem;
+    background-size: cover;
+}
+
 .menu {
     border: none;
     background-color: transparent;
@@ -202,6 +202,7 @@ img {
     left: 5rem;
     top: 2rem;
     transition: 500ms;
+    z-index: 100;
 }
 
 #scroll-down {
@@ -229,7 +230,7 @@ img {
 }
 
 .rmg1 {
-    margin-top: 15rem !important;
+    padding-top: 15rem !important;
 }
 
 .rmg2 {
@@ -252,17 +253,7 @@ img {
     transition: 300ms;
 }
 
-.intro2 {
-    display: block;
-    background-color: white;
-    border-radius: 15px;
-    border: 1px solid rgb(87, 226, 219);
-    padding: 2rem 4rem 2rem 4rem !important;
-    box-shadow: -8px 8px 0px 0px rgb(87, 226, 219);
-    transition: 300ms;
-}
-
-.intro:hover, .intro2:hover {
+.intro:hover {
     box-shadow: -10px 18px 0px 0px rgb(87, 226, 219);
 }
 
@@ -341,14 +332,13 @@ img {
 }
 
 .flip-card-front {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(255 240 211);
     color: black;
 }
 
 .flip-card-back {
-    background-color: rgb(124, 124, 124);
+    background-color: rgb(133, 127, 117);
     color: white;
-    transform: rotateX(180deg);
 }
 
 .nt-blc {
@@ -471,17 +461,19 @@ img {
     .jcc-md {
         justify-content: center;
     }
-
-    .flip-card-back {
-        transform: rotateY(180deg);
-    }
 }
 
 @media (max-width: 576px) {
-    #mobile-only {
-        display: unset;
+    .screen-notion {
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin-top: 1.3rem;
+        display: unset;
+    }
+    
+    #mobile-only {
+        transition: 500ms;
+        display: unset;
     }
 
     .square-container {
@@ -504,6 +496,20 @@ img {
     .page-title {
         left: 2rem;
         top: 3.5rem;
+    }
+    .flip-card {
+        height: 90vh;
+    }
+    .mgt-card {
+        margin-top: 1rem;
+    }
+    .nt-blc {
+        position: fixed;
+        bottom: 30px;
+        opacity: .5;
+    }
+    .nt-blc::before{
+        display: none;
     }
 }
 
