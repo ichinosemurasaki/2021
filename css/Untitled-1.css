@@ -275,18 +275,7 @@ img {
 }
 
 /*第四頁*/
-.te-box {
-    background-color: bisque;
-    height: 500px;
-    width: 100%;
-    border-radius: 1rem;
-    margin-top: 10rem;
-    display: inline-block;
-}
 
-.bg-bis {
-    background-color: bisque;
-}
 
 /*portfolio-card*/
 .mgt-card {
