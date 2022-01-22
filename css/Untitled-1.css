@@ -1,7 +1,7 @@
 /*google font*/
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
 /* * {
     font-family: 'Playfair Display', serif;
@@ -20,6 +20,10 @@
 
 .screen-notion, #mobile-only {
     display: none;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .hamburger {
@@ -361,6 +365,10 @@ img {
     top: -33px;
 }
 
+.nt-blc>p {
+    margin-top: -10px;
+} 
+
 @media (max-width: 1400px) {}
 
 @media (max-width: 1200px) {
@@ -470,7 +478,7 @@ img {
         margin-top: 1.3rem;
         display: unset;
     }
-    
+
     #mobile-only {
         transition: 500ms;
         display: unset;
@@ -497,19 +505,29 @@ img {
         left: 2rem;
         top: 3.5rem;
     }
+
     .flip-card {
-        height: 90vh;
+        height: 85vh;
     }
+
     .mgt-card {
         margin-top: 1rem;
     }
+
     .nt-blc {
         position: fixed;
         bottom: 30px;
         opacity: .5;
     }
-    .nt-blc::before{
+
+    .nt-blc::before {
         display: none;
+    }
+    .nt-blc>p {
+        margin-top: 10px;
+    } 
+    .next {
+        margin-top: -5rem!important;
     }
 }
 
