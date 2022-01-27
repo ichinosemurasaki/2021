@@ -19,7 +19,7 @@
 }
 
 .sk1 {
-    width: 85%;
+    width: 70%;
 }
 
 @keyframes sk1 {
@@ -28,13 +28,13 @@
         background-color: #c2c2c2;
     }
     100% {
-        width: 85%;
+        width: 75%;
         background-color: #ffffff;
     }
 }
 
 .sk2 {
-    width: 10%;
+    width: 80%;
 }
 
 @keyframes sk2 {
@@ -43,13 +43,13 @@
         background-color: #c2c2c2;
     }
     100% {
-        width: 10%;
+        width: 80%;
         background-color: #ffffff;
     }
 }
 
 .sk3 {
-    width: 65%;
+    width: 60%;
 }
 
 @keyframes sk3 {
@@ -58,13 +58,13 @@
         background-color: #c2c2c2;
     }
     100% {
-        width: 65%;
+        width: 60%;
         background-color: #ffffff;
     }
 }
 
 .sk4 {
-    width: 70%;
+    width: 75%;
 }
 
 @keyframes sk4 {
@@ -73,7 +73,7 @@
         background-color: #c2c2c2;
     }
     100% {
-        width: 70%;
+        width: 75%;
         background-color: #ffffff;
     }
 }
@@ -94,25 +94,10 @@
 }
 
 .sk6 {
-    width: 90%;
-}
-
-@keyframes sk6 {
-    0% {
-        width: 5%;
-        background-color: #c2c2c2;
-    }
-    100% {
-        width: 90%;
-        background-color: #ffffff;
-    }
-}
-
-.sk7 {
     width: 50%;
 }
 
-@keyframes sk7 {
+@keyframes sk6 {
     0% {
         width: 5%;
         background-color: #c2c2c2;
@@ -123,8 +108,23 @@
     }
 }
 
+.sk7 {
+    width: 65%;
+}
+
+@keyframes sk7 {
+    0% {
+        width: 5%;
+        background-color: #c2c2c2;
+    }
+    100% {
+        width: 65%;
+        background-color: #ffffff;
+    }
+}
+
 .sk8 {
-    width: 55%;
+    width: 65%;
 }
 
 @keyframes sk8 {
@@ -133,7 +133,7 @@
         background-color: #c2c2c2;
     }
     100% {
-        width: 55%;
+        width: 65%;
         background-color: #ffffff;
     }
 }
