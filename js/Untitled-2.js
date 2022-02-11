@@ -17,7 +17,7 @@ $(function () {
             "width": "10px",
             "transform": "scale(250)"
         }),
-            $("body").css("overflow", "hidden")
+        $("body").css("overflow", "hidden")
         setTimeout(function () { window.location.href = "./Untitled-3.html"; }, 600);
     })
 })
