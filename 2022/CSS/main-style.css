@@ -65,42 +65,6 @@ a:hover {
     transition: 400ms;
 }
 
-.pjt-img {
-    height: 200px;
-}
-
-.pjt-tag {
-    color: rgb(41, 116, 255);
-    text-align: right;
-}
-
-.pjt-banner {
-    height: 100VH;
-    width: 100VW;
-    padding: 0px;
-    overflow: hidden;
-}
-
-.pjt-banner-img {
-    width: 100%;
-    padding: 0px;
-}
-
-.scroll-down {
-    z-index: 99;
-    position: absolute;
-    bottom: 2rem;
-    color: rgb(255, 255, 255);
-    font-size: 3rem;
-    transition: 300ms;
-}
-
-
-.scroll-down:hover {
-    color: rgba(87, 87, 87, 0.7);
-    bottom: 1.5rem;
-}
-
 @media (max-width: 767px) {
     .bg-data {
         display: none;
