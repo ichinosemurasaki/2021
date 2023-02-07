@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+* {
+    font-family: 'Noto Serif TC', serif;
+}
+
+body {
+    transition: ease-in-out 300ms;
+}
+
+.img-frame {
+    width: 100%;
+    height: 50VH;
+    overflow: hidden;
+}
+
+.img-cover {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*image Gallery*/
+.photo-1b {
+    width: 100%;
+    height: 50VH;
+    overflow: hidden;
+}
+
+.photo-2m {
+    width: 100%;
+    height: 24VH;
+    overflow: hidden;
+}
+
+.photo-3s {
+    width: 100%;
+    height: 20VH;
+    overflow: hidden;
+}
+
+/*pages*/
+.title-img {
+    width: 100%;
+    height: 50VH;
+    overflow: hidden;
+}
+
+.shade-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(270deg, #FFFFFF 0%, transparent 50%), url(../IMG/ashe-walker-XSz1XB-nuHA-unsplash.jpg);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.icon-c-bg {
+    background-color: rgb(118, 189, 255);
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    font-size: larger;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cta-img {
+    width: 100%;
+    height: 70VH;
+    overflow: hidden;
+}
+
+/*footer*/
+footer {
+    border-top: #c5c5c5 solid 1px;
+    margin: 0rem 5rem;
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .photo-1b, .photo-2m, .photo-3s {
+        height: 40VH;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+}
